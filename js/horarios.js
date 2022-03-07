@@ -194,7 +194,7 @@ function PoblarTabla(json, titulo, id) {
   let tabla = document.createElement("table");
   tabla.setAttribute("class", "table table-striped table-borderless text-center mt-4 mb-2");
   let thead = document.createElement("thead");
-  thead.setAttribute("class", "table-primary");
+  thead.setAttribute("class", "table-dark");
   let tbody = document.createElement("tbody");
   let tr = document.createElement("tr");
   thead.appendChild(tr);
