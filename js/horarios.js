@@ -172,29 +172,29 @@ let horario2DAW_TARDE = [
 ];
 
 function inicio() {
-  PoblarTabla(horario1SMR, "HORARIO 1SMR", "1smr");
-  PoblarTabla(horario2SMR, "HORARIO 2SMR", "2smr");
-  PoblarTabla(horario1DAW_MANANA, "HORARIO 1DAW MAÑANA", "1dawmanana");
-  PoblarTabla(horario1DAW_TARDE, "HORARIO 1DAW TARDE", "1dawtarde");
-  PoblarTabla(horario2DAW_MANANA, "HORARIO 2DAW MAÑANA", "2dawmanana");
-  PoblarTabla(horario2DAW_TARDE, "HORARIO 2DAW TARDE", "2dawtarde");
+  PoblarTabla(horario1SMR, "HORARIO 1º SMR", "1smr");
+  PoblarTabla(horario2SMR, "HORARIO 2º SMR", "2smr");
+  PoblarTabla(horario1DAW_MANANA, "HORARIO 1º DAW MAÑANA", "1dawmanana");
+  PoblarTabla(horario1DAW_TARDE, "HORARIO 1º DAW TARDE", "1dawtarde");
+  PoblarTabla(horario2DAW_MANANA, "HORARIO 2º DAW MAÑANA", "2dawmanana");
+  PoblarTabla(horario2DAW_TARDE, "HORARIO 2º DAW TARDE", "2dawtarde");
 }
 function PoblarTabla(json, titulo, id) {
   let main = document.getElementById("contenedor-horarios");
   let div = document.createElement("div");
-  div.setAttribute(
-    "class",
-    "bg-secondary bg-opacity-10 p-4 my-4 rounded-3 shadow"
-  );
+  div.setAttribute("class", "bg-light p-4 my-4 rounded-3 shadow");
   let h3 = document.createElement("h3");
   h3.innerHTML = titulo;
   //   h3.setAttribute("class", "font-weight-bold fs-4 mt-5");
   h3.setAttribute("id", id);
   div.appendChild(h3);
   let tabla = document.createElement("table");
-  tabla.setAttribute("class", "table table-striped table-borderless text-center mt-4 mb-2");
+  tabla.setAttribute(
+    "class",
+    "table table-striped table-borderless text-center mt-4 mb-2"
+  );
   let thead = document.createElement("thead");
-  thead.setAttribute("class", "table-primary");
+  thead.setAttribute("class", "table-dark");
   let tbody = document.createElement("tbody");
   let tr = document.createElement("tr");
   thead.appendChild(tr);
