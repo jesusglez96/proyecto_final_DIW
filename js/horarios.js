@@ -187,9 +187,9 @@ h1.setAttribute("class","font-weight-bold fs-4 mt-5")
 h1.setAttribute('id',id)
 div.appendChild(h1)
 let tabla = document.createElement('table');
-tabla.setAttribute('class',"table table-borderless text-center mt-5 mb-5")
+tabla.setAttribute('class',"table table-striped table-borderless text-center mt-5 mb-5")
 let thead = document.createElement('thead')
-thead.setAttribute('class',"table-primary")
+thead.setAttribute('class',"table-dark")
 let tbody = document.createElement('tbody')
  let tr=document.createElement('tr');
  thead.appendChild(tr);
